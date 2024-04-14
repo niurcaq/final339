@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-function flipText() {
-    var box = document.querySelector('.flip-box');
-    box.classList.toggle('flipped');
-};
+// function flipText() {
+//     var box = document.querySelector('.flip-box');
+//     box.classList.toggle('flipped');
+// };
 
 // document.addEventListener('DOMContentLoaded', function() {
 //     var box = document.querySelector('.flip-box');
@@ -24,3 +24,21 @@ function flipText() {
 //         this.classList.toggle('flipped');
 //     });
 // });
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   const flipper = document.querySelector(".flipper");
+//   flipper.addEventListener("click", function() {
+//     this.classList.toggle("flipped");
+//   });
+// });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const flipContainers = document.querySelectorAll(".flip-container");
+  flipContainers.forEach(function(container) {
+    const flipper = container.querySelector(".flipper");
+    flipper.addEventListener("click", function() {
+      this.classList.toggle("flipped");
+    });
+  });
+});

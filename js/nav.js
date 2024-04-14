@@ -18,3 +18,19 @@ function closeNav() {
         document.getElementById("mySidenav").style.height = "0";
     }
 }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     document.querySelectorAll(".flip-box-inner").addEventListener("click", function() {
+//         this.classList.toggle("flipped");
+//     });
+// });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const flipContainers = document.querySelectorAll(".flip-box");
+  flipContainers.forEach(function(container) {
+    const flipper = container.querySelector(".flip-box-inner");
+    flipper.addEventListener("click", function() {
+      this.classList.toggle("flipped");
+    });
+  });
+});
