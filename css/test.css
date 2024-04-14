@@ -1,0 +1,114 @@
+/* .box {
+    width: 400px;
+    height: 300px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.disc {
+    width: 100px;
+    height: 150px;
+    background-color: #000;
+    margin: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.disc:hover {
+    transform: scale(1.1);
+} */
+
+/* .box {
+    width: 400px;
+    height: 300px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.disc {
+    width: 100px;
+    height: 150px;
+    background-color: #000;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+*/
+
+.disc:hover {
+    transform: scale(1.1);
+}
+
+.box {
+    width: 20%;
+    height: 20%;
+    background-color: #f0f0f0;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    /* flex-direction: column; */
+    /* Stack the discs vertically */
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* Add some padding around the discs */
+}
+
+.disc {
+    width: 300px;
+    height: 30px;
+    background-color: #000;
+    margin: 5px;
+    /* Add margin to create spacing between the discs */
+    transition: transform 0.3s ease;
+}
+
+
+
+.flip-box {
+    background-color: #f0f0f0;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    /* Add perspective for 3D effect */
+}
+
+.flip-box-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* Preserve 3D transformation */
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    /* Rotate on Y-axis to reveal back side */
+}
+
+.flip-box-front,
+.flip-box-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    /* Hide the back side */
+}
+
+.flip-box-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-box-back {
+    background-color: #555;
+    color: white;
+    transform: rotateY(180deg);
+    /* Initially hide the back side */
+}

@@ -1,0 +1,237 @@
+html {
+    scroll-behavior: smooth;
+    line-height: 1.2;
+    margin: inherit;
+    background-color: #262626;
+    color: #f2f2f2;
+}
+
+/* body {
+    background-image: url(../images/sunset.png), url(../images/night.png);
+} */
+
+/* .bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+.bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+} */
+
+h1 {
+    font-family: "Tenor Sans","Oswald","Merriweather";
+    font-size: 50px;
+    line-height: 1;
+    padding: 10px 0px 30px 0px;
+    text-align: center;
+    /* color: #f2f2f2; */
+}
+
+h2, h3 {
+    font-family: "Oswald";
+}
+
+#mySidenav>a {
+    font-family: "Oswald";
+}
+
+p {
+    font-family: "Merriweather";
+}
+
+.nav {
+    border-radius: 20%;
+    border: 2.5px solid white;
+    padding: 2px;
+}
+
+.songs {
+    display: grid;
+    padding: 10px;
+}
+
+.song-info {
+    border-radius: 20px;
+    border: 5px solid #111;
+    padding: 20px;
+    margin: 5px;
+    background-color: #f2f2f230;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.song-info h1, .song-info h2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+.flip-box {
+    width: auto;
+    height: 300px;
+    background-color: #f2f2f260;
+    border-radius: 20px;
+    border: 5px solid #111;
+    padding: 20px;
+    margin: 5px;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-self: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /* Preserve 3D transformation */
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+    /* Rotate on Y-axis to reveal back side */
+}
+
+.flip-box-front,
+.flip-box-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    align-content: center;
+    /* Hide the back side */
+}
+
+.flip-box-front {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.flip-box-front>h2 {
+    font-size: 100px;
+    font-style: italic;
+    grid-area: 1/1/3/2;
+    align-content: center;
+}
+
+.flip-box-front>h3 {
+    align-content: center;
+    font-size: 30px;
+}
+
+.flip-box-back {
+    transform: rotateY(180deg);
+    /* Initially hide the back side */
+}
+
+.flip-box-back {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+.flip-box-back>a {
+    width: 20px;
+    height: 20px;
+    /* align-content: center; */
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.flip-box-back>iframe {
+    grid-area: 1/1/2/3;
+    padding: 2px;
+    justify-self: center;
+}
+
+img {
+    width: 110px;
+    height: 110px;
+    border: 3px inset black;
+}
+
+#one-artist {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    padding-left: 15px;
+}
+
+#one-artist>a {
+    padding-left: 70px;
+}
+
+#three-artist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* justify-content: flex-start; */
+}
+
+/* #three-artist>iframe {
+    grid-column-start: 1/span 4;
+    grid-row-start: 1/3;
+} */
+
+#three-artist>iframe {
+    grid-area: 1/1/2/4;
+    justify-self: center;
+}
+
+#three-artist>a {
+    grid-row: 2/span 1;
+    /* padding-left: 90px; */
+    padding: 0px 90px 0px 5px;
+    padding-top: 15px;
+}
+
+#three-artist>a>img {
+    width: 100px;
+    height: 100px;
+}
+
+/* .flip-box-back #one-artist >iframe {
+    grid-area: 1/1/2/3;
+}
+
+#one-artist>a>img {
+    grid-area: 2/1/3/3;
+} */
+
+#four-artist {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#four-artist>iframe {
+    grid-area: 1/1/2/5;
+    justify-self: center;
+    /* width: 50%; */
+}
+
+#four-artist>a {
+    grid-row: 2/span 1;
+    /* padding-left: 90px; */
+    padding: 0px 68px 0px 2px;
+    padding-top: 15px;
+}
+
+#four-artist>a>img {
+    width: 80px;
+    height: 80px;
+}
