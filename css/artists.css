@@ -22,6 +22,8 @@
     /* margin-bottom: 20px; */
     /* border: 5px solid #d9d9d9; */
     border-radius: 20px;
+    /* remove height when working on desktop */
+    height: 40px;
     /* padding: 25px; */
 }
 
@@ -58,7 +60,10 @@
 
 .overlay:hover .text {
     /* opacity: 0; */
-    transform: translateY(-225%);
+    /* uncomment this for desktop */
+    /* transform: translateY(-225%); */
+    /* comment this for desktop */
+    transform: translateX(-45%);
     color: #ffffff;
     /* #003300 */
     font-weight: bold;
@@ -67,4 +72,110 @@
     /* padding: 5px; */
     /* border: 2px solid white; */
     /* Text opacity changes to 0 on hover */
+}
+
+/* album {
+    border-radius: 20%;
+    border: 2.5px solid white;
+    padding: 2px;
+} */
+
+#RAnav, 
+#BBnav,
+#Tnav,
+#PPnav,
+#YMnav,
+#MITnav,
+#Rnav,
+#LUVnav,
+#JWnav,
+#KGnav {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+    justify-content: center;
+    /* align-content: center; */
+    row-gap: 20px;
+    /* padding-bottom: 20px; */
+    /* padding-bottom: 70px; */
+    /* align-content: center; */
+}
+
+#RAnav>img, 
+#RAnav>iframe, 
+#BBnav>img, 
+#BBnav>iframe,
+#Tnav>img,
+#Tnav>iframe,
+#PPnav>img,
+#PPnav>iframe,
+#YMnav>img,
+#YMnav>iframe,
+#MITnav>img,
+#MITnav>iframe,
+#Rnav>img,
+#Rnav>iframe,
+#LUVnav>img,
+#LUVnav>iframe,
+#JWnav>img,
+#JWnav>iframe,
+#KGnav>img,
+#KGnav>iframe {
+    border: 4px solid #00b300;
+    border-radius: 10px;
+    justify-self: center;
+    /* margin-bottom: ; */
+}
+
+#RAnav>a, 
+#BBnav>a,
+#Tnav>a,
+#PPnav>a,
+#YMnav>a,
+#MITnav>a,
+#Rnav>a,
+#LUVnav>a,
+#JWnav>a,
+#KGnav>a {
+    padding: 0px;
+    /* color: #8181ff; */
+}
+
+#RAnav>a>h2, 
+#BBnav>a>h2,
+#Tnav>a>h2,
+#PPnav>a>h2,
+#YMnav>a>h2,
+#MITnav>a>h2,
+#Rnav>a>h2,
+#LUVnav>a>h2,
+#JWnav>a>h2,
+#KGnav>a>h2 {
+    color: #00b300;
+    font-family: "Bebas Neue";
+}
+
+#RAnav>h2, 
+#BBnav>h2,
+#Tnav>h2,
+#PPnav>h2,
+#YMnav>h2,
+#MITnav>h2,
+#Rnav>h2,
+#LUVnav>h2,
+#JWnav>h2,
+#KGnav>h2 {
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    color: #009900;
+}
+
+p {
+    font-family: "Oswald";
+    color: #009900;
+    font-size: 17px;
+}
+
+.empty {
+    padding: 50px;
+    visibility: hidden;
 }
