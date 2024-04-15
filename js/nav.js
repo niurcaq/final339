@@ -34,3 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const item1Width = document.querySelector(".box").offsetWidth;
+  const item2 = document.querySelector(".disc");
+  item2.style.width = `calc(60% * ${boxWidth}px)`;
+});
