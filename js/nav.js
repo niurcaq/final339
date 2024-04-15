@@ -40,3 +40,25 @@ document.addEventListener("DOMContentLoaded", function() {
   const item2 = document.querySelector(".disc");
   item2.style.width = `calc(60% * ${boxWidth}px)`;
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.2 // Trigger animation when 20% of the box is visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelector('.text').classList.add("animate");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  const imageContainers = document.querySelectorAll(".image-container");
+  imageContainers.forEach(container => {
+    observer.observe(container);
+  });
+});
