@@ -1,6 +1,7 @@
 function openNav() {
-    if(screen.width >= 850) {
+    if(screen.width >= 1200) {
         document.getElementById("mySidenav").style.width = "250px";
+        // document.getElementById(".nav").style.border = "2px solid white"
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -10,7 +11,7 @@ function openNav() {
 }
 
 function closeNav() {
-    if(screen.width >= 850) {
+    if(screen.width >= 1200) {
         document.getElementById("mySidenav").style.width = "0";
         // document.getElementById("mySidenav").style.height = "0";
     }

@@ -1,9 +1,37 @@
+.skip {
+    background: white;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border: 2px solid;
+}
+
+.skip:focus {
+    top: 20px;
+}
+
 html {
     scroll-behavior: smooth;
     line-height: 1.2;
     margin: inherit;
     background-color: #262626;
     color: #f2f2f2;
+}
+
+main {
+    margin-top: 80px;
+}
+
+footer {
+    margin-left: 15px;
+    margin-bottom: 15px;
 }
 
 h1 {
@@ -30,9 +58,22 @@ p {
 }
 
 .nav {
-    border-radius: 20%;
-    border: 2.5px solid white;
+    /* border-radius: 20%; */
+    /* border: 2.5px solid white; */
     padding: 2px;
+    /* border-top: 35px; */
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    /* width: 100%; */
+}
+
+.nav:focus {
+    border: 2px solid white;
+}
+
+.nav a:focus {
+    border: 2px solid white;
 }
 
 .sidenav {
