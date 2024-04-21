@@ -1,8 +1,6 @@
 function openNav() {
     if(screen.width >= 1200) {
         document.getElementById("mySidenav").style.width = "250px";
-        // document.getElementById(".nav").style.border = "2px solid white"
-        // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
         // document.getElementById("mySidenav").style.width = "100%";
@@ -20,12 +18,6 @@ function closeNav() {
     }
 }
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     document.querySelectorAll(".flip-box-inner").addEventListener("click", function() {
-//         this.classList.toggle("flipped");
-//     });
-// });
-
 document.addEventListener("DOMContentLoaded", function() {
   const flipContainers = document.querySelectorAll(".flip-box");
   flipContainers.forEach(function(container) {
@@ -39,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function openRA() {
     if(screen.width >= 850) {
-        document.getElementById("RAnav").style.width = "100%";
+        document.getElementById("RAnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -60,7 +52,7 @@ function closeRA() {
 
 function openBB() {
     if(screen.width >= 850) {
-        document.getElementById("BBnav").style.width = "100%";
+        document.getElementById("BBnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -81,7 +73,7 @@ function closeBB() {
 
 function openT() {
     if(screen.width >= 850) {
-        document.getElementById("Tnav").style.width = "100%";
+        document.getElementById("Tnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -102,7 +94,7 @@ function closeT() {
 
 function openPP() {
     if(screen.width >= 850) {
-        document.getElementById("PPnav").style.width = "100%";
+        document.getElementById("PPnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -123,7 +115,7 @@ function closePP() {
 
 function openYM() {
     if(screen.width >= 850) {
-        document.getElementById("YMnav").style.width = "100%";
+        document.getElementById("YMnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -144,7 +136,7 @@ function closeYM() {
 
 function openMIT() {
     if(screen.width >= 850) {
-        document.getElementById("MITnav").style.width = "100%";
+        document.getElementById("MITnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -165,7 +157,7 @@ function closeMIT() {
 
 function openR() {
     if(screen.width >= 850) {
-        document.getElementById("Rnav").style.width = "100%";
+        document.getElementById("Rnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -186,7 +178,7 @@ function closeR() {
 
 function openLUV() {
     if(screen.width >= 850) {
-        document.getElementById("LUVnav").style.width = "100%";
+        document.getElementById("LUVnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -207,7 +199,7 @@ function closeLUV() {
 
 function openJW() {
     if(screen.width >= 850) {
-        document.getElementById("JWnav").style.width = "100%";
+        document.getElementById("JWnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -228,7 +220,7 @@ function closeJW() {
 
 function openKG() {
     if(screen.width >= 850) {
-        document.getElementById("KGnav").style.width = "100%";
+        document.getElementById("KGnav").style.width = "40%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {

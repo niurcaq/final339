@@ -1,15 +1,29 @@
+.stats {
+    font-size: 30px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-style: italic;
+    color: #00b300;
+}
+
+h1 {
+    color: #00b300;
+}
+
 .column {
     display: grid;
     grid-template-rows: auto auto auto;
     justify-content: center;
     align-content: center;
     row-gap: 10px;
-    border: 5px solid black;
+    border: 5px solid #00b300;
     border-radius: 20px;
     /* width: auto; */
     padding: 10px 0px;
     justify-content: space-around;
-    background-color: #ffffff80;
+    /* background-color: #ffffff80; */
+    background-color: #00b30060;
     margin: 10px;
 }
 
@@ -67,18 +81,8 @@
     color: #ffffff;
     /* #003300 */
     font-weight: bold;
-    /* font-size: 30px; */
-    /* background-color: #ffffff90; */
-    /* padding: 5px; */
-    /* border: 2px solid white; */
-    /* Text opacity changes to 0 on hover */
 }
 
-/* album {
-    border-radius: 20%;
-    border: 2.5px solid white;
-    padding: 2px;
-} */
 
 #RAnav,
 #BBnav,
@@ -173,7 +177,14 @@
     font-family: "Oswald";
     color: #009900;
     font-size: 17px;
+    /* padding-bottom: 15px; */
 }
+
+/* .info {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    row-gap: 20px;
+} */
 
 .empty {
     padding: 50px;
@@ -235,39 +246,64 @@
         /* padding: 25px; */
     }
 
-    .overlay:hover .text {
-        /* opacity: 0; */
-        /* uncomment this for desktop */
-        transform: translateY(-225%);
-        /* comment this for desktop */
-        /* transform: translateX(-45%); */
-        color: #ffffff;
-        /* #003300 */
-        font-weight: bold;
-        border-radius: 0px;
-        height: auto;
-        padding: 0px;
-        /* font-size: 30px; */
-        /* background-color: #ffffff90; */
-        /* padding: 5px; */
-        /* border: 2px solid white; */
-        /* Text opacity changes to 0 on hover */
+    .overlay .text {
+        transition: transform 0.9s ease, opacity 0.5s ease;
+        transform: translateY(0%);
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        font-style: italic;
+        padding: 20px;
+        font-family: "Bebas Neue";
     }
 
     .overlay:hover .text {
-        /* opacity: 0; */
-        /* uncomment this for desktop */
         transform: translateY(-225%);
-        /* comment this for desktop */
-        /* transform: translateX(-45%); */
         color: #ffffff;
-        /* #003300 */
         font-weight: bold;
-        /* font-size: 30px; */
-        /* background-color: #ffffff90; */
-        /* padding: 5px; */
-        /* border: 2px solid white; */
-        /* Text opacity changes to 0 on hover */
     }
 
+    #RAnav,
+    #BBnav,
+    #Tnav,
+    #PPnav,
+    #YMnav,
+    #MITnav,
+    #Rnav,
+    #LUVnav,
+    #JWnav,
+    #KGnav {
+        transition: width 2s
+    }
+
+    /* #RAnav {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    #num {
+        grid-area: 1/1/5/2;
+    }
+
+    .info {
+        grid-area: 1/2/2/3;
+    }
+
+    #RAnav img {
+        grid-area: 1/3/6/4;
+    }
+
+    .data1 {
+        grid-area: 2/1/2/3;
+    }
+    .data1m {
+        grid-area: 3/1/2/4;
+        width: 200px;
+    }
+    .data2, .data2m {
+        grid-column: 2/3;
+    }
+    .data3, .data3m {
+        grid-column: 3/4;
+    }  */
 }
