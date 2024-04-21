@@ -6,31 +6,10 @@ html {
     color: #f2f2f2;
 }
 
-/* body {
-    background-image: url(../images/sunset.png), url(../images/night.png);
-} */
-
-/* .bg {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-}
-
-.bg img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-} */
-
 h1 {
-    font-family: "Tenor Sans","Oswald","Merriweather";
+    /* font-family: "Bebas Neue"; */
+    font-family: "Bebas Neue";
+    /* , "Tenor Sans","Oswald","Merriweather"; */
     font-size: 50px;
     line-height: 1;
     padding: 10px 0px 30px 0px;
@@ -105,4 +84,27 @@ p {
 .nav {
     font-size: 35px;
     cursor: pointer;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    /* desktop view */
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        /* height: 0;
+        width: 100%; */
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: -20px;
+        /* bottom: -50px;
+        left: 0; */
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 2s;
+        padding-top: 60px;
+    }
 }

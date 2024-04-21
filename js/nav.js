@@ -35,37 +35,10 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-  const item1Width = document.querySelector(".box").offsetWidth;
-  const item2 = document.querySelector(".disc");
-  item2.style.width = `calc(60% * ${boxWidth}px)`;
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.2 // Trigger animation when 20% of the box is visible
-  };
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.querySelector('.text').classList.add("animate");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
-
-  const imageContainers = document.querySelectorAll(".image-container");
-  imageContainers.forEach(container => {
-    observer.observe(container);
-  });
-});
 
 function openRA() {
     if(screen.width >= 850) {
-        document.getElementById("RAnav").style.width = "250px";
+        document.getElementById("RAnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -86,7 +59,7 @@ function closeRA() {
 
 function openBB() {
     if(screen.width >= 850) {
-        document.getElementById("BBnav").style.width = "250px";
+        document.getElementById("BBnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -107,7 +80,7 @@ function closeBB() {
 
 function openT() {
     if(screen.width >= 850) {
-        document.getElementById("Tnav").style.width = "250px";
+        document.getElementById("Tnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -128,7 +101,7 @@ function closeT() {
 
 function openPP() {
     if(screen.width >= 850) {
-        document.getElementById("PPnav").style.width = "250px";
+        document.getElementById("PPnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -149,7 +122,7 @@ function closePP() {
 
 function openYM() {
     if(screen.width >= 850) {
-        document.getElementById("YMnav").style.width = "250px";
+        document.getElementById("YMnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -170,7 +143,7 @@ function closeYM() {
 
 function openMIT() {
     if(screen.width >= 850) {
-        document.getElementById("MITnav").style.width = "250px";
+        document.getElementById("MITnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -191,7 +164,7 @@ function closeMIT() {
 
 function openR() {
     if(screen.width >= 850) {
-        document.getElementById("Rnav").style.width = "250px";
+        document.getElementById("Rnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -212,7 +185,7 @@ function closeR() {
 
 function openLUV() {
     if(screen.width >= 850) {
-        document.getElementById("LUVnav").style.width = "250px";
+        document.getElementById("LUVnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -233,7 +206,7 @@ function closeLUV() {
 
 function openJW() {
     if(screen.width >= 850) {
-        document.getElementById("JWnav").style.width = "250px";
+        document.getElementById("JWnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {
@@ -254,7 +227,7 @@ function closeJW() {
 
 function openKG() {
     if(screen.width >= 850) {
-        document.getElementById("KGnav").style.width = "250px";
+        document.getElementById("KGnav").style.width = "100%";
         // document.getElementById("mySidenav").style.height = "250px";
     }
     else {

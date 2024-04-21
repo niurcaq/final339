@@ -1,5 +1,3 @@
-
-
 .songs {
     display: grid;
     padding: 10px;
@@ -75,24 +73,23 @@
 }
 
 .flip-box-back {
-    transform: rotateY(180deg);
-    /* Initially hide the back side */
-}
-
-.flip-box-back {
     display: grid;
+    transform: rotateY(180deg);
+    /* grid-template-columns: auto auto; */
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 5px;
     align-content: center;
     justify-content: center;
+    justify-items: center;
 }
 
-.flip-box-back>a {
-    width: 20px;
-    height: 20px;
-    /* align-content: center; */
-    padding: 10px;
-    padding-left: 20px;
+.flip-box-back>a:link {
+    font-style: italic;
+    text-decoration: none;
+    font-family: "Oswald";
+    font-size: 20px;
+    color: #ff6666;
 }
 
 .flip-box-back>iframe {
@@ -109,113 +106,94 @@ img {
 
 #one-artist {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
     justify-items: center;
-    padding-left: 15px;
+    /* justify-content: center; */
+    /* padding-left: 15px; */
 }
 
 #one-artist>a {
-    padding-left: 70px;
+    grid-area: 3/1/4/2;
 }
 
 #three-artist {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 5px;
+    /* padding: 5px 0px 5px 10px; */
     /* justify-content: flex-start; */
 }
 
-/* #three-artist>iframe {
-    grid-column-start: 1/span 4;
-    grid-row-start: 1/3;
-} */
-
 #three-artist>iframe {
     grid-area: 1/1/2/4;
-    justify-self: center;
+    grid-column-start: 1/span 4;
+    grid-row-start: 1/3;
 }
-
-#three-artist>a {
-    grid-row: 2/span 1;
-    /* padding-left: 90px; */
-    padding: 0px 90px 0px 5px;
-    padding-top: 15px;
-}
-
-#three-artist>a>img {
-    width: 100px;
-    height: 100px;
-}
-
-/* .flip-box-back #one-artist >iframe {
-    grid-area: 1/1/2/3;
-}
-
-#one-artist>a>img {
-    grid-area: 2/1/3/3;
-} */
 
 #four-artist {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 5px;
 }
 
 #four-artist>iframe {
     grid-area: 1/1/2/5;
-    justify-self: center;
-    /* width: 50%; */
+}
+
+#four-artist>img {
+    grid-row: 2/3;
+    width: 90%;
+    height: 90%;
 }
 
 #four-artist>a {
-    grid-row: 2/span 1;
-    /* padding-left: 90px; */
-    padding: 0px 68px 0px 2px;
-    padding-top: 15px;
+    grid-row: 3/4;
+    /* font-size: 10px; */
 }
 
-#four-artist>a>img {
-    width: 80px;
-    height: 80px;
+
+@media screen and (min-width: 550px) {
+    /* tablet view */
+    .songs {
+        display: grid;
+        padding: 10px;
+        /* grid-template-columns: auto auto; */
+    }
+
+    .flip-box {
+        height: 330px;
+    }
+
+    .flip-box-back {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: normal;
+        align-content: flex-start;
+    }
+
+    #four-artist>img {
+        width: 110px;
+        height: 110px;
+    }
+    
 }
 
-/* .disc:hover {
-    transform: scale(1.1);
+@media screen and (min-width: 1200px) {
+    /* desktop view */
+    .songs {
+        grid-template-columns: auto auto;
+    }
+    #one-artist {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+    }
+    #one-artist>iframe {
+        grid-area: 1/1/2/2;
+    }
 }
-
-.box {
-    width: auto;
-    height: auto;
-    background-color: #f0f0f0;
-    display: grid;
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.disc {
-    height: 30px;
-    background-color: #000;
-    margin: 5px;
-    transition: transform 0.3s ease;
-    padding: 100px;
-    text-align: center;
-    align-content: center;
-}
-
-.back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    align-content: center;
-}
-
-.disc:hover {
-
-}
-
-.box> {
-    width: auto;
-} */
