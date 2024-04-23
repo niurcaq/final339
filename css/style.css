@@ -128,7 +128,6 @@ p {
 }
 
 
-
 @media screen and (min-width: 1200px) {
     /* desktop view */
 
@@ -143,5 +142,26 @@ p {
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
+    }
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .skip a {
+        -webkit-transition: none;
+        transition: none;
+    }
+
+    .sidenav,
+    .sidenav a {
+        transition: none;
+    }
+
+    .fa-spin {
+        transition: none;
+        transform: none;
     }
 }
