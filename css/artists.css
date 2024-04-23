@@ -187,16 +187,16 @@ h1 {
     visibility: hidden;
 }
 
-#RAnav>#num,
-#BBnav>#num,
-#Tnav>#num,
-#PPnav>#num,
-#YMnav>#num,
-#MITnav>#num,
-#Rnav>#num,
-#LUVnav>#num,
-#JWnav>#num,
-#KGnav>#num {
+#RAnav>.num,
+#BBnav>.num,
+#Tnav>.num,
+#PPnav>.num,
+#YMnav>.num,
+#MITnav>.num,
+#Rnav>.num,
+#LUVnav>.num,
+#JWnav>.num,
+#KGnav>.num {
     font-size: 90px;
 }
 
